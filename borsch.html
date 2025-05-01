@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Борщ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+    header, footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .filters {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .filters a {
+      text-decoration: none;
+      color: white;
+      background: #ffa07a;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .filters a:hover {
+      background: #ff7f50;
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      gap: 40px;
+    }
+    .content img {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .recipe-text {
+      max-width: 500px;
+    }
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .recipe-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Смачні Рецепти</h1>
+  <div class="filters">
+    <a href="#">Сніданоки</a>
+    <a href="#">Обіди</a>
+    <a href="#">Вечері</a>
+    <a href="#">Десерти</a>
+    <a href="index.html">На головну</a>
+  </div>
+</header>
+
+<div class="content">
+  <img src="https://images.unian.net/photos/2020_04/thumb_files/1200_0_1588081977-7108.jpg" alt="Борщ">
+  <div class="recipe-text">
+    <h2>Борщ</h2>
+    <p><strong>Інгредієнти:</strong></p>
+    <ul>
+      <li>500 г буряка</li>
+      <li>300 г картоплі</li>
+      <li>200 г капусти</li>
+      <li>1 морква</li>
+      <li>1 цибулина</li>
+      <li>м'ясо (за бажанням)</li>
+      <li>сіль, перець, лавровий лист</li>
+    </ul>
+    <p><strong>Приготування:</strong></p>
+    <p>Зварити бульйон, додати нарізані овочі. Наприкінці додати тушкований буряк, спеції, за бажанням томатну пасту. Варити до готовності овочів.</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Мій сайт рецептів</p>
+</footer>
+
+</body>
+</html>

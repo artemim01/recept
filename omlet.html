@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Омлет</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff8f0;
+      color: #333;
+    }
+    header, footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .filters {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .filters a {
+      text-decoration: none;
+      color: white;
+      background: #ffa07a;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .filters a:hover {
+      background: #ff7f50;
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      gap: 40px;
+    }
+    .content img {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .recipe-text {
+      max-width: 500px;
+    }
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .recipe-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Смачні Рецепти</h1>
+  <div class="filters">
+    <a href="#">Сніданоки</a>
+    <a href="#">Обіди</a>
+    <a href="#">Вечері</a>
+    <a href="#">Десерти</a>
+    <a href="index.html">На головну</a>
+  </div>
+</header>
+
+<div class="content">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZzsGd-zj1MGQlY6pj_7-KroM3UQ09OS0LP5u_Tn_Ww&s&ec=72940545" alt="Омлет">
+  <div class="recipe-text">
+    <h2>Омлет</h2>
+    <p><strong>Інгредієнти:</strong></p>
+    <ul>
+      <li>3 яйця</li>
+      <li>50 мл молока</li>
+      <li>сіль, перець за смаком</li>
+      <li>зелень (за бажанням)</li>
+      <li>олія для смаження</li>
+    </ul>
+    <p><strong>Приготування:</strong></p>
+    <p>Збий яйця з молоком, додай сіль, перець і зелень. Обсмаж на середньому вогні під кришкою до готовності.</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Мій сайт рецептів</p>
+</footer>
+
+</body>
+</html>
