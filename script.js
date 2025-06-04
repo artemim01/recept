@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Define the recipe mappings
     const recipes = {
         'млинці': 'mlynci.html',
         'борщ': 'borsch.html',
@@ -56,25 +55,18 @@ document.addEventListener('DOMContentLoaded', function() {
         'холодець': 'холодець.html',
         'сирники з родзинками': 'сирники_з_родзинками.html'
     };
-
-    // Check if search bar already exists
-    if (!document.querySelector('.search-container')) {
-        // Create search bar
+    if (!document.querySelector('.search-container')) { 
         const searchContainer = document.createElement('div');
         searchContainer.className = 'search-container';
         searchContainer.innerHTML = `
             <input type="text" id="searchInput" placeholder="Пошук рецептів..." />
             <button id="searchButton">Шукати</button>
         `;
-
-        // Insert search bar above filters
         const filtersDiv = document.querySelector('.filters');
         if (filtersDiv) {
             filtersDiv.parentNode.insertBefore(searchContainer, filtersDiv);
         }
     }
-
-    // Search functionality
     const searchInput = document.getElementById('searchInput');
     const searchButton = document.getElementById('searchButton');
 
@@ -86,11 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Рецепт не знайдено. Спробуйте іншу назву.');
         }
     }
-
-    // Search on button click
     searchButton.addEventListener('click', performSearch);
-
-    // Search on Enter key press
     searchInput.addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
             performSearch();
